@@ -30,16 +30,4 @@ const getWeather=(coordinates, callback)=>{
 })
 }
 
-// let coordinates=[28.613895,77.209006];
-// getWeather(coordinates,(error, data)=>{
-//    if(error) console.log(chalk.red(error));
-//    else {
-//     const { temperature, precip, description } = data;
-//     console.log(`Its currently ${chalk.red(temperature)} degree out.
-//      There is a ${chalk.blue(precip)} % chance of rain.
-//      Overall weather is ${description}`);
-//    }
-// })
-
-
 module.exports=getWeather

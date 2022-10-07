@@ -1,28 +1,5 @@
 console.log('Client side javascript file is loaded..')
 
-// const address='Kolkata';
-// fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
-//     address
-//   )}.json?access_token=pk.eyJ1IjoiZGlsaXAtYmhvaSIsImEiOiJjbDdmeDNzdGswZXBlM3RscTRnNGJ5dnNrIn0.hg4hmcTzZXTDjIiRKONuew&limit=1`)
-//   .then((res)=>{
-
-//      res.json().then((response)=>{
-//         //console.log(response)
-//         const [data] = response.features;
-//         // here 0-longitude 1 latitude
-//         const latitude = data.center[1];
-//         const longitude = data.center[0];
-//         const { place_name } = data;
-//         console.log(latitude, longitude,  place_name)
-        
-
-
-//      }).catch((error)=>{
-//          console.log("Error Details 1", error);
-//      })
-// }).catch((error)=>{
-//     console.log("Error Details 2", error);
-// })
 const weatherForm = document.querySelector('form');
 const searchInput = document.querySelector('input');
 
