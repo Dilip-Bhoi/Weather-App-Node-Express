@@ -6,6 +6,7 @@ const cors = require('cors')
 const geoCode =require('./utils/geoCode');
 const getWeather = require('./utils/weather')
 
+const PORT = process.env.PORT || 3000;
 
 const app = express()
 const publicDirPath = path.join(__dirname, '../public');
@@ -89,6 +90,9 @@ app.get('*',(req,res)=>{
      })
 })
 
-app.listen(3000, ()=>{
-    console.log('Server Running on 3000')
+app.listen(PORT,(err)=>{
+  if(err){
+      return console.log(`Server running failed.`)
+  }
+  console.log(`Server running at port ${PORT}`)
 })
